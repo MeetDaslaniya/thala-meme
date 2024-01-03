@@ -1,0 +1,21 @@
+*{
+    background-color: rgb(183, 243, 245);
+}
+
+.center{
+    display: block;
+    text-align: center;
+}
+
+#hd{
+    padding-bottom: 20px;
+    padding-top: 50px;
+}
+
+.imge {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+

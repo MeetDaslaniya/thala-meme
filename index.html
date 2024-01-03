@@ -3,22 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
     <title>Prectice</title>
   </head>
   <body>
-    <div id="root"></div>
-    <h1>there is somethin for reason!</h1>
-    <input type="text" id="text_area" />
-    <button id="button-1">Click Me</button>
-    <h1 id="el" style="display: none">length of string is 7 so....</h1>
-    <h1 id="ml" style="display: none">length of string is not 7 so....</h1>
+    <div class="center">
+      <h1 class="center" id="hd">Thala for a reason?(made it in an hour)</h1>
+      <input type="text" id="text_area" placeholder="Enter Anything" />
+      <button id="button-1">Check</button>
+      <h1 id="el" style="display: none">length of string is 7 so....</h1>
+      <h1 id="ml" style="display: none">length of string is not 7 so....</h1>
 
-    <img
-      id="myimg"
-      src="./thala for a reason.jpg"
-      style="display: none; height: 20%; width: 40%"
-    />
-    <img id="moye" src="./moye.jfif" style="display: none" />
+      <img
+        class="imge"
+        id="myimg"
+        src="./thala for a reason.jpg"
+        style="display: none; height: 20%; width: 40%"
+      />
+      <img class="imge" id="moye" src="./moye.jfif" style="display: none" />
+    </div>
     <script>
       const button = document.getElementById("button-1");
 
@@ -26,25 +29,20 @@
         const text = document.getElementById("text_area").value;
         length1 = text.length;
 
-        if (length1 === 7) 
-        {
+        if (length1 === 7) {
           const ml = document.getElementById("ml");
           ml.style.display = "none";
           const moye = document.getElementById("moye");
           moye.style.display = "none";
           el.style.display = "block";
           myimg.style.display = "block";
-          // console.log("is 7")
-        } 
-        else 
-        {
+        } else {
           const myimg = document.getElementById("myimg");
           myimg.style.display = "none";
           const el = document.getElementById("el");
           el.style.display = "none";
           ml.style.display = "block";
           moye.style.display = "block";
-          // console.log("is not 7")
         }
       });
     </script>
