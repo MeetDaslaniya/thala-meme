@@ -1,5 +1,11 @@
 const button = document.getElementById("button-1");
-
+const input = document.getElementById("text_area");
+input.addEventListener("keypress",function(event){
+  if (event.key === "Enter"){
+    event.preventDefault();
+    document.getElementById("button-1").click();
+  }
+})
       button.addEventListener("click", () => {
         const text = document.getElementById("text_area").value;
         length1 = text.length;
